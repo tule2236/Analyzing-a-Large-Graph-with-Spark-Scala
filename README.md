@@ -12,13 +12,13 @@ You may find some of the following DataFrame operations helpful:
 >toDF, filter, join, select, groupBy  
 
 Consider the following example:
-**Input:**
-|src |tgt |weight  |
-| ------------- |:-------------:| -----:|
-|1|2|40| 
-|2|3|100|
+**Input:**  
+|src |tgt |weight  |  
+| ------------- |:-------------:| -----:|  
+|1|2|40|  
+|2|3|100|  
 |1|3|60|  
-|3| 4|1|
+|3| 4|1|  
 |3| 1|10|  
 
 **Output:**
