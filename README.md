@@ -11,15 +11,15 @@ above). Filter out (ignore) all edges whose edge weights equal 1 i.e., only cons
 You may find some of the following DataFrame operations helpful:
 >toDF, filter, join, select, groupBy  
 
-Consider the following example:
+Consider the following example:  
 **Input:**  
-|src |tgt |weight  |  
-| ------------- |:-------------:| -----:|  
-|1|2|40|  
-|2|3|100|  
-|1|3|60|  
-|3| 4|1|  
-|3| 1|10|  
+| src        | tgt           | weight  |
+| ------------- |:-------------:| -----:|
+| 1      | 2 | 40 |
+| 2      | 3      |   100 |
+| 1 | 3     |    60 |
+| 3 | 4     |    1 |
+| 3 | 1     |    10 | 
 
 **Output:**
 |src |tgt |weight  |
