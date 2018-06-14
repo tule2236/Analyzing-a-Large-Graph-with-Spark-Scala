@@ -20,6 +20,7 @@ def main(args: Array[String]) {
 	val data1 = dfpop.filter($"weight" > 1).groupBy(dfpop("source")).agg(sum(dfpop("weight"))).toDF("source","weight1")
 	
 	val data2 = dfpop.filter($"weight" > 1).groupBy(dfpop("target")).agg(sum(dfpop("weight"))).toDF("target","weight2")
+	val data3 = dfpop.filter($"weight" > 1).groupBy(dfpop("target")).agg(sum(dfpop("weight"))).toDF("target","weight2")
 
 	val data3 = data1.join(data2, data1("source") === data2("target"),"outer")
 
